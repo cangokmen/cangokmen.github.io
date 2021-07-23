@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <link href="styles.css" rel="stylesheet">
+        <title>Mainpage</title>
+
+    </head>
+
+    <body>
+
+    <!-- Desktop version -->
+
+    <div class="desktop">
+        <div class="centered">
+
+            <!-- Header -->
+            <div id="name-desktop"><h1 style="font-size: 140px" class="py-5">CAN GÖKMEN</h1></div>
+            <!-- Subheaders -->
+            <h2 id="h2" class="my-4"><a href="aboutme.html">About Me</a></h2>
+            <h2 id="h2" class="my-4"><a href="hobbies.html">Hobbies</a></h2>
+            <h2 id="h2" class="my-4"><a href="cv.html">CV</a></h2>
+            <h2 id="h2" class="my-4"><a href="contact.html">Contact</a></h2>
+        </div>
+    </div>
+
+    <!-- Mobile version -->
+
+    <div class="mobile">
+        <div class="centered">
+
+            <div id="name-mobile"><h1 style="font-size: 200px" class="py-5">CAN GÖKMEN</h1></div>
+
+            <h2 style="font-size: 100px" id="h2" class="my-4"><a href="aboutme.html">About Me</a></h2>
+            <h2 style="font-size: 100px" id="h2" class="my-4"><a href="hobbies.html">Hobbies</a></h2>
+            <h2 style="font-size: 100px" id="h2" class="my-4"><a href="cv.html">CV</a></h2>
+            <h2 style="font-size: 100px" id="h2" class="my-4"><a href="contact.html">Contact</a></h2>
+        </div>
+    </div>
+    <script>
+
+        var div;
+
+        // Use the window jquery function
+        $(window).height();
+
+        // Detect if mobile or desktop and get the width value
+        if (window.screen.width < 450)
+        {
+            div = document.getElementById("name-mobile");
+        }
+        else
+        {
+            div = document.getElementById("name-desktop");
+        }
+
+        // Get a random color
+        // Source: https://stackoverflow.com/a/1484514
+        function getRandomColor()
+        {
+            var letters = "0123456789ABCDEF";
+            var c = '#';
+
+            for (var i = 0; i < 6; i++)
+            {
+                c += letters[Math.floor(Math.random() * 16)];
+            }
+
+            return c;
+        }
+
+        // Prototype the color change function
+        function changeColor()
+        {
+            div.style.color= getRandomColor();
+        }
+
+        // Run the color change function
+        changeColor();
+
+        // Set an interval of 1 second
+        setInterval(changeColor,1000);
+
+    </script>
+
+    </body>
+
+</html>

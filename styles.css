@@ -1,0 +1,148 @@
+body
+{
+    background-color: #dafcf6;
+    font-family: Arial, sans-serif;
+}
+
+.header
+{
+    font-size: 140px;
+    color: #17030C;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+ul
+{
+    display: table;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+#cite
+{
+    color: black;
+}
+
+
+#h2
+{
+    font-size: 60px;
+}
+
+#infos
+{
+    font-size: 30px;
+}
+
+#basketball
+{
+    width: 800px;
+    height: 500px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+#dj
+{
+    width: 800px;
+    height: 500px;
+    margin-left: 1250px;
+    margin-top: -100px;
+}
+
+#gaming
+{
+    width: 800px;
+    height: 500px;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+.hobbyHeaderDesktop
+{
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.hobbyTextDesktop
+{
+    font-size: 30px;
+}
+
+.return-home-desktop
+{
+    position: absolute;
+    font-size: 20px;
+    left: 50px;
+    top: 100px;
+}
+
+.return-home-mobile
+{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 300px;
+    padding-bottom: 200px;
+}
+
+#like
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+
+.mobile
+{
+    display: none;
+}
+
+
+@media only screen and (max-device-width: 480px)
+{
+    .mobile {display: block;}
+    .desktop {display: none;}
+}
+
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.mobileImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 400px;
+}
+
+.mobileImageCaption
+{
+    text-align: center;
+    font-size: 10px;
+}
+
+.hobbyHeaderMobile
+{
+    position: relative;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+
+.hobbyTextMobile
+{
+    position: relative;
+    font-size: 50px;
+}
